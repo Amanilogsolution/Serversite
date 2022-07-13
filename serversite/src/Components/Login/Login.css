@@ -1,0 +1,37 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.formcontainer {
+   color: aliceblue;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   width: 350px;
+   padding: 50px 30px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 25px #000;
+}
+
+#img{
+    height: 110px;
+    width:130px;
+    margin-left:50%;
+    transform: translate(-50%);
+}
+
+.control input{
+   width: 99%;
+   margin: auto;
+   height: 30px;
+   padding: 5px;
+   box-sizing: border-box;
+}
+
+.psw-btn{
+   margin-left: 50%;
+   transform: translate(-50%);
+}
