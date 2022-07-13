@@ -1,13 +1,15 @@
 import React from "react";
-import Awl from "./awl2.png";
+import Awllogo from "../../img/awl2.png";
 import "./Login.css";
 
 export default function Login() {
   return (
     <>
+    <div className="formmaindiv">
+
       <div className="formcontainer">
         <div className="login">
-        <img className="p-0" id="img" src={Awl} alt="awl india"  />
+        <img className="p-0" id="img" src={Awllogo} alt="awl india"  />
         <h4 className="text-center" style={{marginBottom:"70px"}}>AWL India Serversite</h4>
         
         <div className="control">
@@ -24,6 +26,7 @@ export default function Login() {
           <button className="btn btn-primary mt-2 psw-btn" value="Login">Login</button>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
