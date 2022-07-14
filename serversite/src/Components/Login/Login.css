@@ -44,3 +44,15 @@
    margin-left: 50%;
    transform: translate(-50%);
 }
+
+@media screen and (max-width:360px){
+   .formcontainer{
+      width: 100%;
+   }
+}
+
+@media screen and (max-width:250px){
+   .formcontainer{
+      box-shadow: none;
+   }
+}
