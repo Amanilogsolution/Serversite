@@ -4,7 +4,7 @@ import Login from './Components/Login/Login';
 import Pagenotfound from './Components/pagenotfound/Pagenotfound'
 
 import Dashboard from './Components/Dashboard/Dashboard';
-import Form from './Components/Form/Form';
+import Form2 from './Components/Form2/Form2';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
               <Route path='/' element={ <Login/>}/>
               <Route path='*' element={ <Pagenotfound/>}/>
               <Route path='/dashboard' element={ <Dashboard/>}/>
-              <Route path='/form' element={ <Form/>}/>
+              <Route path='/form' element={ <Form2/>}/>
             </Routes>
     </Router>
     

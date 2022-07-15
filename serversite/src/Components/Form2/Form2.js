@@ -1,4 +1,4 @@
-import './form.css'
+import './form2.css'
 
 function Form() {
     return (
