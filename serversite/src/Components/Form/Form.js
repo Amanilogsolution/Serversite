@@ -6,7 +6,7 @@ export default function Form() {
     <>
     <div className="main">
       <div className="container">
-        <div className="title">Resistration</div>
+        <div className="title">Registration</div>
         <form action="/">
             <div className="user-details">
                 <div className="input-box">
@@ -36,7 +36,7 @@ export default function Form() {
                 
                
                 <div className="button my-2"> 
-                   <button className="btn btn-primary">Resister</button>
+                   <button className="btn btn-primary">Register</button>
                 </div>
             </div>
         </form>
