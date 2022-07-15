@@ -6,7 +6,6 @@ import Pagenotfound from './Components/pagenotfound/Pagenotfound'
 import Dashboard from './Components/Dashboard/Dashboard';
 import Form from './Components/Form/Form';
 
-
 function App() {
   return (
     <div className="App">
@@ -15,7 +14,7 @@ function App() {
               <Route path='/' element={ <Login/>}/>
               <Route path='*' element={ <Pagenotfound/>}/>
               <Route path='/dashboard' element={ <Dashboard/>}/>
-              <Route path='/form2' element={ <Form/>}/>
+              <Route path='/form' element={ <Form/>}/>
             </Routes>
     </Router>
     
