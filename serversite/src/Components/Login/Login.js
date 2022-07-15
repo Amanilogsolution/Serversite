@@ -15,13 +15,13 @@ export default function Login() {
         <div className="control">
           
           {/* <label>Username</label> */}
-          <input type="text" id="un" placeholder="Username" style={{marginBottom:"30px",color:"white",background: 'transparent', border:"none",boxShadow: "0 1.3px  white"}}></input>
+          <input type="text" id="un" placeholder="Username" style={{marginBottom:"30px",background: 'transparent', border:"none",borderBottom:"2px solid #000"}}></input>
          
        
           {/* <label>Password</label> */}
-          <input type="password" id="psw" placeholder="Password" style={{marginBottom:"20px",color:"white",background: 'transparent',border:"none",boxShadow: "0 1.3px  white"}}></input>
+          <input type="password" id="psw" placeholder="Password" style={{marginBottom:"20px",background: 'transparent',border:"none",borderBottom:"2px solid #000"}}></input>
           
-       <button className="btn btn-outline-light mt-2 psw-btn" value="Login">Login</button>
+       <button className="btn btn-primary mt-2 psw-btn" value="Login">Login</button>
           </div>
         </div>
       </div>
