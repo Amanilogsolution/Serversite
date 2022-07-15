@@ -4,7 +4,7 @@ import './Form.css'
 export default function Form() {
   return (
     <>
-    <body>
+    <div className="main">
       <div className="container">
         <div className="title">Resistration</div>
         <form action="/">
@@ -41,7 +41,7 @@ export default function Form() {
             </div>
         </form>
       </div>
-    </body>
+    </div>
     </>
   );
 }
