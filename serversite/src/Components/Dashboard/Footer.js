@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>
+    <div style={{position:"fixed",bottom:"0", width:"100%"}}>
         <div className="card text-center" >
         <div className="card-header bg-dark text-light">Featured</div>
         <div className="card-body bg-secondary">

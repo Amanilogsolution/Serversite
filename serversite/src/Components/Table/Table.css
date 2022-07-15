@@ -1,0 +1,14 @@
+#main{
+    background-color:rgb(48, 48, 48);
+    color:aliceblue
+}
+#hit{
+    border-radius: 5px;
+    
+}
+.entry tr:hover{
+   background: rgb(156, 155, 155);
+}
+.com{
+    background: linear-gradient(black,gray,silver,white,silver,gray,black);
+}

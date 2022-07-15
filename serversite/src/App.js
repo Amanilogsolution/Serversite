@@ -5,6 +5,7 @@ import Pagenotfound from './Components/pagenotfound/Pagenotfound'
 
 import Dashboard from './Components/Dashboard/Dashboard';
 import Form2 from './Components/Form/Form';
+import Table from './Components/Table/Table';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Route path='*' element={ <Pagenotfound/>}/>
               <Route path='/dashboard' element={ <Dashboard/>}/>
               <Route path='/form' element={ <Form2/>}/>
+              <Route path='/table' element={ <Table/>}/>
             </Routes>
     </Router>
     
