@@ -17,8 +17,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background: rgba(255, 255, 255, 1);
-  width: 400px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 340px;
   padding: 50px 30px;
   border-radius: 10px;
   box-shadow: 5px 5px 25px #000;
@@ -43,6 +43,11 @@
   width: 90px;
   margin-left: 50%;
   transform: translate(-50%);
+  
+  
+}
+::placeholder{
+  color: rgb(61, 61, 61);
 }
 
 @media screen and (max-width: 360px) {

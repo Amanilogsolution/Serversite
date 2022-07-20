@@ -8,7 +8,7 @@ export default function Dashboard() {
     <div>
       <Nav/>
       <Card/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

@@ -2,8 +2,26 @@ import React from "react";
 import Footer from "../Dashboard/Footer";
 import Nav from "../Dashboard/Nav";
 import "./Table.css";
+import axios from 'axios'
 
 export default function Table() {
+   
+ const handleSubmit = (e)=>{
+   
+
+  axios.get('http://192.168.146.136:8003/api/totaldeviceservices')
+  .then((response) => {  
+    console.log(response.data);
+    if(response.data.status==="Success"){ 
+      window.location.href='/dashboard'
+    }
+
+  })
+  .catch((err)=>{
+    console.log(err)
+    console.log(err.response)
+  })
+  }
   return (
     <>
       <Nav></Nav>
@@ -14,10 +32,10 @@ export default function Table() {
           <table class="table">
             <thead class="thead-dark" id="main">
               <tr>
-                <th scope="col">Device Id</th>
-                <th scope="col">Device Name</th>
+                <th scope="col">Sno</th>
+                <th scope="col">Device-Id</th>
+                <th scope="col">Device-Services</th>
                 <th scope="col">Remark</th>
-                <th scope="col">Handle</th>
               </tr>
             </thead>
 

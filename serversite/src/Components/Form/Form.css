@@ -21,7 +21,7 @@
 .containers{
     max-width: 700px;
     width: 100%;
-    background: rgb(255, 253, 253);
+    background: rgb(255, 255, 255);
     padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 4px 4px 17px #000000;
@@ -59,4 +59,7 @@ form .user-details .input-box{
   font-weight: 500;
   margin-bottom: 45px;
   margin: 20px 0 12px 0;
+}
+input{
+    background: none;
 }
