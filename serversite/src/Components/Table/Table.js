@@ -2,35 +2,36 @@ import React from "react";
 import Footer from "../Dashboard/Footer";
 import Nav from "../Dashboard/Nav";
 import "./Table.css";
-import axios from 'axios'
+
+import { useState, useEffect } from "react";
+import Pagination from "../Pagination";
 
 export default function Table() {
-   
- const handleSubmit = (e)=>{
-   
+  const [data, getData] = useState([]);
+  const URL = "http://192.168.146.136:8003/api/totaldeviceservicesmaster";
 
-  axios.get('http://192.168.146.136:8003/api/totaldeviceservices')
-  .then((response) => {  
-    console.log(response.data);
-    if(response.data.status==="Success"){ 
-      window.location.href='/dashboard'
-    }
+  // useEffect(() => {
+  //     fetchData();
 
-  })
-  .catch((err)=>{
-    console.log(err)
-    console.log(err.response)
-  })
-  }
+  // },[]);
+  const fetchData = () => {
+    fetch(URL)
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response);
+        getData(response);
+      });
+  };
+
   return (
     <>
-      <Nav></Nav>
-      <div className=".com">
+      <Nav />
+      <div className="com">
         <div className="container my-4" id="hit">
-          <button className="btn btn-primary  my-2">Edit</button>
-          <button className="btn btn-primary mx-2">Delete</button>
+          <button className="btn btn-primary  my-2" onClick={fetchData}>Show</button>
+          
           <table class="table">
-            <thead class="thead-dark" id="main">
+            <thead class="thead-black" id="main">
               <tr>
                 <th scope="col">Sno</th>
                 <th scope="col">Device-Id</th>
@@ -40,29 +41,21 @@ export default function Table() {
             </thead>
 
             <tbody className="entry">
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
+              {data.map((item, i) => (
+                <tr key={i}>
+                  <td>{item.sno}</td>
+                  <td>{item.id}</td>
+                  <td>{item.device_services}</td>
+                  <td>{item.remark}</td>
+                 
+                </tr>
+              )).reverse()}
             </tbody>
           </table>
         </div>
         {/* <Footer/> */}
       </div>
+      <Pagination/>
     </>
   );
 }

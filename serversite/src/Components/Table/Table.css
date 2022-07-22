@@ -1,5 +1,5 @@
 #main{
-    background-color:rgb(48, 48, 48);
+    background-color:black;
     color:aliceblue
 }
 #hit{
@@ -7,8 +7,11 @@
     
 }
 .entry tr:hover{
-   background: rgb(156, 155, 155);
+   background: rgb(105, 105, 105);
+   color: aliceblue;
+   
 }
 .com{
-    background: linear-gradient(black,gray,silver,white,silver,gray,black);
+    position: fixed;
+    width: 100%;
 }

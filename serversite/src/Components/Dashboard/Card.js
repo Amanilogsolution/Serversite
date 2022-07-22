@@ -3,7 +3,7 @@ import React from 'react'
 export default function Card() {
   return (
     <div>
-        <div className='row' style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <div className='row' style={{display:"flex",justifyContent:"center",alignItems:"center",width:"100%",height:"100%"}}>
             <div className="card mx-4 my-4 bg-secondary text-light " style={{width: "18rem"}}>
                 
                 <div className="card-body">
